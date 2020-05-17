@@ -1,0 +1,172 @@
+html {
+	height: 100%;
+	overflow: hidden;
+}
+
+body{
+    color: #fffffb;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+	margin: 0;
+	padding: 0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+	height: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	font-size: 20px;
+}
+
+section{
+    padding: 30vh 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+mark{
+    background-color:white;
+    border: black dotted;
+}
+
+.one{
+    background-image: url("123.jpg");
+    position: absolute cover;
+    perspective: 1px;
+    font-family: 'Rancho', cursive;
+    font-size:90px ;
+    font-weight:lighter;
+    font-style: initial;
+}
+.two {
+    background: #ff6b6c;
+     position: relative;
+    z-index: 10;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 0% 100%);
+    margin-bottom: -10vw;
+}
+
+.four {
+    background: rgb(9, 194, 201);
+}
+.four > h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.three {
+    background:lightgreen;
+    font-family: 'Amatic SC', cursive;
+}
+.three > h1 {
+    font-size: 80px;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    grid-auto-rows: minmax(50px);
+    padding: 3rem;
+    
+}
+.gallery{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+.nested{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:1em;
+    grid-auto-rows:70px;
+}
+
+.nested > div{
+    border: black 1px solid;
+    padding: 1rem;
+}
+
+.wrapper > div{
+        background:white;
+        padding: 1em;
+    }
+.wrapper > div:nth-child(odd){
+    background: cornflowerblue;
+} 
+.maindiv{
+            width: 900px;
+            height: 600px;
+            position: cover center absolute;
+            background-image: url("11.jpg");
+            background-position: center;
+            background-size: 100% 100%;
+            box-shadow: 1px 2px 10px 5px black;
+            animation: slider 20s infinite linear;
+        }
+        
+        @keyframes slider{
+                0%{background-image: url("22.jpg");}
+                25%{background-image: url("33.jpg");}
+                50%{background-image: url("44.jpg");}
+                75%{background-image: url("11.jpg");}
+            }
+
+header {
+	box-sizing: border-box;
+	min-height: 100vh;
+	padding: 30vw 0 5vw;
+	position: relative;
+	transform-style: inherit;
+	width: 100vw;
+	background-position: center;
+}
+header h1 {
+	margin-top: -100px;
+	
+}
+
+
+
+header, header:before {
+	background: 50% 50% / cover;
+}
+
+header::before {
+	bottom: 0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	background-image: url("dog3.png");
+	background-size: cover;
+	transform-origin: center center 0;
+	transform: translateZ(-1px) scale(2);
+	z-index: -1;
+	min-height: 100vh;	
+}
+
+header * {
+	font-weight: normal;
+	letter-spacing: 0.2em;
+	text-align: center;
+	margin: 0;
+	padding: 1em 0;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+#clock {
+  font-family: 'Orbitron', sans-serif;
+  color: #66ff99;
+  font-size: 56px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+
